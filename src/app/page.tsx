@@ -23,6 +23,9 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+import About from "@/app/about/page";
+
+
 export default function Home() {
   const blogPosts = [
     {
@@ -74,12 +77,12 @@ export default function Home() {
                 prepares students for success in an ever-changing world.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href={"/posts"}>
+                <Link href={"/about"}>
                   <Button
                     size="lg"
                     className="bg-primary hover:bg-primary text-white"
                   >
-                    Schedule a Tour
+                    Stories & Insights
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -322,7 +325,7 @@ export default function Home() {
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-ash-300">
                 <li>
-                  <Link href="#" className="hover:text-gold-400">
+                  <Link href="/about" className="hover:text-gold-400">
                     About Us
                   </Link>
                 </li>
